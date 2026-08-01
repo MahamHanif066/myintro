@@ -1,13 +1,23 @@
-import React from 'react'
-import Link from 'next/link'
+import Link from "next/link";
+
 const Navbar = () => {
   return (
-    <div>
-        <Link href="/"> Home </Link>
-        <Link href="/about"> About us </Link>
-        <Link href="/contact"> Contact us </Link>
-    </div>
-  )
-}
+    <div className="flex gap-5 bg-blue-500 p-5 text-white">
 
-export default Navbar
+      <Link href="/">
+        Home
+      </Link>
+
+      <Link href="/about">
+        About
+      </Link>
+
+      <Link href="/contact">
+        Contact
+      </Link>
+
+    </div>
+  );
+};
+
+export default Navbar;
